@@ -1,0 +1,70 @@
+[
+{"type":"header","version":"5.1.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"companydb"},
+{"type":"table","name":"orders","database":"companydb","data":
+[
+{"orderid":"1","date":"2019-09-09","total":"350","subtotal":"250","taxes":"100","paid":"1","userid":"1","shippingid":"1","paymentid":"1"},
+{"orderid":"2","date":"2019-10-09","total":"350","subtotal":"250","taxes":"100","paid":"0","userid":"2","shippingid":"2","paymentid":"2"},
+{"orderid":"3","date":"2017-05-09","total":"350","subtotal":"250","taxes":"100","paid":"0","userid":"3","shippingid":"3","paymentid":"3"},
+{"orderid":"4","date":"2020-03-09","total":"350","subtotal":"250","taxes":"100","paid":"0","userid":"4","shippingid":"4","paymentid":"4"},
+{"orderid":"5","date":"2005-11-09","total":"350","subtotal":"250","taxes":"100","paid":"1","userid":"5","shippingid":"5","paymentid":"5"},
+{"orderid":"6","date":"2001-12-09","total":"350","subtotal":"250","taxes":"100","paid":"1","userid":"6","shippingid":"6","paymentid":"6"},
+{"orderid":"7","date":"2008-05-17","total":"120","subtotal":"150","taxes":"12","paid":"1","userid":"1","shippingid":"1","paymentid":"1"},
+{"orderid":"8","date":"2018-11-22","total":"1350","subtotal":"2350","taxes":"1500","paid":"1","userid":"3","shippingid":"4","paymentid":"1"},
+{"orderid":"9","date":"1999-10-22","total":"50","subtotal":"2530","taxes":"1010","paid":"0","userid":"5","shippingid":"1","paymentid":"2"},
+{"orderid":"10","date":"1990-05-13","total":"22","subtotal":"2570","taxes":"105","paid":"0","userid":"2","shippingid":"3","paymentid":"3"},
+{"orderid":"11","date":"1980-03-25","total":"32","subtotal":"2510","taxes":"1070","paid":"0","userid":"7","shippingid":"2","paymentid":"4"},
+{"orderid":"12","date":"2002-11-13","total":"4750","subtotal":"2350","taxes":"1700","paid":"1","userid":"4","shippingid":"6","paymentid":"5"},
+{"orderid":"13","date":"2014-12-09","total":"854","subtotal":"2450","taxes":"1800","paid":"1","userid":"2","shippingid":"5","paymentid":"6"},
+{"orderid":"14","date":"2002-05-17","total":"945","subtotal":"5150","taxes":"192","paid":"1","userid":"1","shippingid":"1","paymentid":"1"},
+{"orderid":"15","date":"2019-10-09","total":"350","subtotal":"250","taxes":"100","paid":"0","userid":"2","shippingid":"2","paymentid":"2"},
+{"orderid":"16","date":"2019-05-09","total":"350","subtotal":"250","taxes":"100","paid":"0","userid":"3","shippingid":"3","paymentid":"3"},
+{"orderid":"17","date":"2002-03-09","total":"350","subtotal":"250","taxes":"100","paid":"0","userid":"4","shippingid":"4","paymentid":"4"},
+{"orderid":"18","date":"2019-11-09","total":"350","subtotal":"250","taxes":"100","paid":"1","userid":"5","shippingid":"5","paymentid":"5"},
+{"orderid":"19","date":"2019-12-09","total":"350","subtotal":"250","taxes":"100","paid":"1","userid":"6","shippingid":"6","paymentid":"6"},
+{"orderid":"20","date":"2002-05-17","total":"120","subtotal":"150","taxes":"12","paid":"1","userid":"1","shippingid":"1","paymentid":"1"},
+{"orderid":"21","date":"2018-11-22","total":"1350","subtotal":"2350","taxes":"1500","paid":"1","userid":"3","shippingid":"4","paymentid":"1"},
+{"orderid":"22","date":"2017-10-22","total":"50","subtotal":"2530","taxes":"1010","paid":"0","userid":"5","shippingid":"1","paymentid":"2"},
+{"orderid":"23","date":"2017-05-13","total":"22","subtotal":"2570","taxes":"105","paid":"0","userid":"2","shippingid":"3","paymentid":"3"},
+{"orderid":"24","date":"2018-03-25","total":"32","subtotal":"2510","taxes":"1070","paid":"0","userid":"7","shippingid":"2","paymentid":"4"},
+{"orderid":"25","date":"2011-11-13","total":"4750","subtotal":"2350","taxes":"1700","paid":"1","userid":"4","shippingid":"6","paymentid":"5"},
+{"orderid":"26","date":"2014-12-09","total":"854","subtotal":"2450","taxes":"1800","paid":"1","userid":"2","shippingid":"5","paymentid":"6"},
+{"orderid":"27","date":"2013-05-17","total":"945","subtotal":"5150","taxes":"192","paid":"1","userid":"1","shippingid":"1","paymentid":"1"}
+]
+}
+,{"type":"table","name":"payment","database":"companydb","data":
+[
+{"paymentid":"1","type":"CreditCard","date":"2020-10-30","txnid":"1","total":"3000","status":"1"},
+{"paymentid":"2","type":"PayPal","date":"2020-09-09","txnid":"2","total":"2500","status":"0"},
+{"paymentid":"3","type":"PayPal","date":"2020-01-30","txnid":"3","total":"1500","status":"1"},
+{"paymentid":"4","type":"CreditCard","date":"2020-06-12","txnid":"4","total":"2000","status":"0"},
+{"paymentid":"5","type":"PayPal","date":"2020-02-02","txnid":"5","total":"3200","status":"1"},
+{"paymentid":"6","type":"CreditCard","date":"2020-07-27","txnid":"6","total":"5000","status":"0"}
+]
+}
+,{"type":"table","name":"shipping","database":"companydb","data":
+[
+{"shippingid":"1","address":"42 Avenue","city":"Manhattan","state":"New York","country":"USA","cost":"200"},
+{"shippingid":"2","address":"50 Avenue","city":"Miami","state":"Florida","country":"USA","cost":"10"},
+{"shippingid":"3","address":"23 Avenue","city":"Orlando","state":"Florida","country":"USA","cost":"120"},
+{"shippingid":"4","address":"142 Avenue","city":"San Francisco","state":"California","country":"USA","cost":"100"},
+{"shippingid":"5","address":"542 Avenue","city":"Los Angeles","state":"California","country":"USA","cost":"15"},
+{"shippingid":"6","address":"245 Avenue","city":"Townsend","state":"Tennesssee","country":"USA","cost":"32"}
+]
+}
+,{"type":"table","name":"users","database":"companydb","data":
+[
+{"userid":"1","name":"Alan","lastname":"Agora","govid":"2","email":"alan@email.com","company":"apple","password":"123"},
+{"userid":"2","name":"Betty","lastname":"Holberton","govid":"3","email":"betty@email.com","company":"Holberton School","password":"123"},
+{"userid":"3","name":"Dennis","lastname":"Ritchie","govid":"1","email":"dennis@email.com","company":"apple","password":"123"},
+{"userid":"4","name":"Steve","lastname":"Jobs","govid":"4","email":"steve@email.com","company":"apple","password":"123"},
+{"userid":"5","name":"Elon","lastname":"Musk","govid":"5","email":"elon@email.com","company":"Tesla","password":"123"},
+{"userid":"6","name":"Julien","lastname":"Barbier","govid":"3","email":"julien@email.com","company":"Holberton School","password":"123"},
+{"userid":"7","name":"Tori","lastname":"Cybill","govid":"3","email":"qmacro@msn.com","company":"Rohan-Auer","password":"123"},
+{"userid":"8","name":"Masterman","lastname":"Aline","govid":"3","email":"bmidd@sbcglobal.net","company":"Kuphal and Sons","password":"123"},
+{"userid":"9","name":"Selina","lastname":"Terrell","govid":"3","email":"iamcal@sbcglobal.net","company":"Weimann, Breitenberg and Mueller","password":"123"},
+{"userid":"10","name":"Keegan","lastname":"Moriah","govid":"3","email":"danzigism@icloud.com","company":"Haag Inc","password":"123"},
+{"userid":"11","name":"Betsy","lastname":"Everard","govid":"3","email":"timlinux@att.net","company":"Gusikowski, Lehner and Lueilwitz","password":"123"}
+]
+}
+]
