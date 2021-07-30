@@ -15,9 +15,18 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from views import views
+from views import views, orders, users
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url('home/', views.home , name="home")
+    url('home/', views.home , name="home"),
+    url('login/', views.login, name="login"),
+    url('orders/<int:order_id>', orders.order, name="order_id"), 
+    url('orders/[order_ids]', orders.orders, name="orders_ids"), 
+    url('orders/dates', orders.dates, name="dates"),
+    url('orders/shipping/{key=string}' , orders.shipping, name="shipping"),
+    url('orders/<user_id>', users.user_orders, name="user_orders"),
+    url('users/all', users.all_users, name="users" ),
+    url('users/<user_id>', users.user_id, name= "user_id" ),
+    url('orders/search', orders.search, name="search" ),
 ]
